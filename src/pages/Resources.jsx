@@ -2,6 +2,7 @@ import { memo } from "react";
 import { Link } from "react-router-dom";
 import { motion, useReducedMotion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react"; //CircleArrowRight
+import { SquareCheck } from "lucide-react";
 
 import resourcesImg from ".././assets/resourcesImg.jpg";
 
@@ -59,8 +60,9 @@ const ResourceCard = memo(function ResourceCard({
         shadow-[0_2px_5px_rgba(35,30,20,0.04)]
         sm:p-6 lg:p-7"
     >
-      <p className="mb-5 text-[9px] font-medium uppercase tracking-[0.09em] text-[#78816d]">
-        # {type}
+      <p className="mb-5 flex items-center gap-2 text-[9px] font-medium uppercase tracking-[0.09em] text-[#78816d]">
+        <SquareCheck size={13} strokeWidth={1.8} />
+        {type}
       </p>
 
       <h2 className="mb-3 text-[19px] font-medium leading-snug tracking-[-0.035em] text-[#242421] sm:text-[21px]">
@@ -114,7 +116,6 @@ export default function Resources() {
             action, and build a healthier relationship with money.
           </p>
         </motion.header>
-
         {/* Featured survey */}
         <motion.section
           variants={reveal}
@@ -126,8 +127,9 @@ export default function Resources() {
         >
           <article className="relative flex min-h-[205px] overflow-hidden rounded-[20px] bg-white p-5 shadow-[0_2px_5px_rgba(35,30,20,0.04)] sm:min-h-[225px] sm:p-7 lg:min-h-[235px] lg:items-center lg:justify-between lg:gap-8 lg:px-8">
             <div className="relative z-10 flex w-full flex-col items-start lg:w-[76%]">
-              <p className="mb-5 text-[9px] font-medium uppercase tracking-[0.09em] text-[#78816d]">
-                # SURVEY
+              <p className="mb-5 flex items-center gap-2 text-[9px] font-medium uppercase tracking-[0.09em] text-[#78816d]">
+                <SquareCheck size={13} strokeWidth={1.8} />
+                SURVEY
               </p>
 
               <h2
@@ -172,7 +174,6 @@ export default function Resources() {
             </div>
           </article>
         </motion.section>
-
         {/* Workbook cards */}
         <motion.section
           variants={reveal}

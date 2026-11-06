@@ -19,17 +19,17 @@ const services = [
   {
     icon: Target,
     title: "Purposeful Action Program",
-    text: "Turn clarity into intentional progress, with a practical plan that supports your goals and keeps you moving forward.",
+    text: "Gain clarity, challenge limiting beliefs, and turn your intentions into purposeful action through a focused 6-week coaching program. ",
   },
   {
     icon: Lightbulb,
     title: "Mentoring & Advisory",
-    text: "Get thoughtful perspective, guidance, and accountability from someone who understands the path you are navigating.",
+    text: "Get practical perspective, guidance, and lessons drawn from years of leadership experience across finance, FMCG, and technology.",
   },
   {
     icon: TrendingUp,
     title: "Financial Freedom Coaching",
-    text: "Build confidence with your money, develop healthier habits, and make decisions that support the life you want.",
+    text: "Build a healthier relationship with money and create a practical path toward financial independence through better habits,mindsets, and a clear financial plan.",
   },
 ];
 
@@ -43,7 +43,7 @@ const steps = [
   {
     icon: Lightbulb,
     title: "Confidence",
-    text: "Strengthen your voice and trust your own decisions.",
+    text: "Show up with greater confidence in your career and personal life.",
   },
   {
     icon: Target,
@@ -262,9 +262,9 @@ export default function Home({ onBook }) {
             </h2>
 
             <p className="mx-auto mt-7 max-w-[620px] text-sm leading-[2] text-[#77736a] sm:text-base">
-              Whether you're early-career, pivoting careers, or a leader
-              planning for your next chapter, these coaching and advisory
-              services are designed to help you move forward with confidence.
+              Whether you need clarity,practical guidance, or a better plan for
+              your finances, these coaching and advisory services are designed
+              to help you move forward with confidence.
             </p>
           </Reveal>
 
@@ -289,9 +289,9 @@ export default function Home({ onBook }) {
                     <Icon size={19} strokeWidth={1.5} />
                   </div>
 
-                  <span className="mt-9 text-[9px] font-semibold uppercase tracking-[0.2em] text-[#b29a77]">
+                  {/* <span className="mt-9 text-[9px] font-semibold uppercase tracking-[0.2em] text-[#b29a77]">
                     0{i + 1} / OUR SERVICES
-                  </span>
+                  </span> */}
 
                   <h3 className="mt-4 font-serif text-[26px] leading-[1.25] tracking-[-0.025em] text-[#302e28]">
                     {service.title}
@@ -336,9 +336,8 @@ export default function Home({ onBook }) {
             </h2>
 
             <p className="mt-7 max-w-[590px] text-sm leading-[2] text-[#c2beb3] sm:text-base">
-              Coaching helps you clarify direction, build confidence and take
-              intentional steps toward meaningful progress in your career,
-              personal brand and life.
+              Coaching gives you the clarity,confidence and support to make real
+              progress in your career, personal brand and life.
             </p>
           </Reveal>
 
@@ -522,7 +521,7 @@ export default function Home({ onBook }) {
               </h2>
 
               <p className="mx-auto mt-7 max-w-[490px] text-sm leading-[1.9] text-[#77736a] sm:text-base">
-                Let's talk about where you are today and where you'd like to go.
+                Let's turn where you are today into a clear path forward.
               </p>
               <Link
                 to="/booking"
