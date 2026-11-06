@@ -72,6 +72,7 @@ const ResourceCard = memo(function ResourceCard({
       <p className="mb-6 text-[11px] leading-[1.85] text-[#74736c] sm:text-xs">
         {description}
       </p>
+      {/*  */}
 
       <div className="mt-auto">
         <GoldButton href={href}>{button}</GoldButton>
